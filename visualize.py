@@ -72,7 +72,7 @@ app.layout = html.Div([
 
     dcc.Graph(figure=fig, id='main_window_slope')
 ]),
-    dcc.Tab(id='tab2', label='SIR Model', value='tab2', children=[
+    dcc.Tab(id='tab2', label='SIR Prediction Model', value='tab2', children=[
 dcc.Markdown('''
 
     # Implmentation of SIR model for Multiple countries
@@ -152,7 +152,7 @@ def SIR_figure(country_list_dropdown):
     df_plot = df_analyse[df_analyse['country'] == country_list_dropdown]
     df_plot = df_plot[['state', 'country', 'confirmed', 'date']].groupby(['country', 'date']).agg(np.sum).reset_index()
     df_plot.sort_values('date', ascending = True).head()
-    df_plot = df_plot.confirmed[35:]
+    df_plot = df_plot.confirmed[65:]
     t, fitted,popt = SIR_modelling(df_plot,population)
 
     traces.append(dict (x = t,
@@ -190,4 +190,4 @@ def SIR_figure(country_list_dropdown):
 
 if __name__ == '__main__':
 
-    app.run_server(debug=True, use_reloader=False,port = 9050)
+    app.run_server(debug=True, use_reloader=False,port = 9090)
