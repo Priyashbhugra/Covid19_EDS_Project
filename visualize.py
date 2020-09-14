@@ -39,7 +39,7 @@ app.layout = html.Div([
 
     '''),
     dcc.Tabs(id='main_tab', value='main_tab', children=[
-        dcc.Tab(id='tab1', label='Country-Wise cases visualization', value='tab1', children=[
+        dcc.Tab(id='tab1', label='Visualization of COVID19 data', value='tab1', children=[
 
             dcc.Markdown('''
     ## Select or Enter multiple country for visualization
@@ -72,7 +72,7 @@ app.layout = html.Div([
 
     dcc.Graph(figure=fig, id='main_window_slope')
 ]),
-    dcc.Tab(id='tab2', label='SIR Modelling of Infection spread', value='tab2', children=[
+    dcc.Tab(id='tab2', label='SIR Model', value='tab2', children=[
 dcc.Markdown('''
 
     # Implmentation of SIR model for Multiple countries
