@@ -14,5 +14,5 @@ Visualize_SIR,py contains code for SIR modeling but you have to run only visuali
 
 
 Dashboard contains two tabs 1st tab contains the visualisation of covid 19 dataset for multiple countries along with doubling rate whereas 2nd tab contains SIR prediction model.
-<img src = "Images/Dashboard1.png"
-<img src = "Images/SIR_Dashboard.png"
+<img src = "Images/Dashboard1.png">
+<img src = "Images/SIR_Dashboard.png">
