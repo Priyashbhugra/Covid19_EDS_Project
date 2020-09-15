@@ -10,6 +10,14 @@ This project is done in Python. I have used Dash Library for Visualisation. Make
 Main File is visualize.py which contains all the code required for visualisation. 
 Visualize_SIR.py contains code for SIR modeling but you have to run only visualize.py for overall visualisation.
 
+**How to run the Dash Board**
+1) Install Dash using : pip install dash
+2) Clone the repository : git clone "copy url from my git repository"
+3) Go to the repository and run : python visualize.py 
+4) Wait for 5 minutes to clone the data from John hopkins university
+5) Copy the http:url from the command prompt you will have a view of dashboard
+
+
 Dashboard contains two tabs 1st tab contains the visualisation of covid 19 dataset for multiple countries along with doubling rate whereas 2nd tab contains SIR prediction model.
 
 **Dashboard**
